@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd",
+  "version": "1.0.0",
+  "description": "Biblioteca curso js com tdd na pratica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbaia29/js-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Daniel Amaral <danielbaia29@gmail.com> (http://www.danielbaia29.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielbaia29/js-tdd/issues"
+  },
+  "homepage": "https://github.com/danielbaia29/js-tdd#readme"
+}
