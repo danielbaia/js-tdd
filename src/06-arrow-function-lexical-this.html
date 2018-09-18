@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <button id="click">Make a sandwich</button>
+    
+        <script>
+
+            sandwich = {
+                bread: "white",
+                cheese: "chedar",
+
+                prepare: function(){
+                    return `I want sandwich with bread ${this.bread} and cheese ${this.cheese}`;
+                },
+
+                //Gambiarra antiga
+                /* make: function(){
+                    var that = this;
+                    window.setTimeout( function(){
+                        console.log(that.prepare());
+                    },500)
+                } */
+                
+                make: function(){
+                    window.setTimeout( () => {console.log(this.prepare())}, 500);
+                }
+
+            };
+
+        var btn = document.getElementById("click");
+        btn.addEventListener('click', function(){ sandwich.make()});
+
+        </script>
+    </body>
+</html>
