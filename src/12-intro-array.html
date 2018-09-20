@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <ul id="list">
+            <li>Daniel</li>
+            <li>Fabio</li>
+            <li>Ohana</li>
+            <li>Rodrigo</li>
+            <li>Aline</li>
+        </ul>
+    
+        <script>
+
+            /* const txt = 'Daniel';
+            console.log(Array.from(txt)); */
+
+            const list = document.querySelectorAll('#list li');
+            const listArr = Array.from(list);
+            console.log(listArr);
+
+            const names = listArr.map(name => {return name.textContent});
+            console.log(names);
+            
+
+            const namesArr = Array.from(list)
+                            .map((name) => name.textContent);
+            
+            console.log(namesArr);
+            
+            
+            
+               
+        </script>
+    </body>
+</html>

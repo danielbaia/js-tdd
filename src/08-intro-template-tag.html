@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .grenn{
+                color: green;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <script>
+
+            var city = 'Belem';
+            var love = "Mangas"
+            var weather = 'Chuva'
+
+             
+             function green(template, ...values){
+                 debugger
+            }
+
+            /* function green(template, ...values){
+                return template.reduce( (acumulator, part, i ) => {
+                    return `${acumulator}
+                         <span class = "green"> ${values[i - 1].toUpperCase()} </span> 
+                         ${part}`
+                        
+                });
+            } */
+
+
+            var txt = green`Moro em ${city}, cidade das ${love} e da ${weather} no final da tarde!`;
+
+            document.body.innerHTML = txt;
+
+        </script>
+    </body>
+</html>
