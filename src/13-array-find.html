@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+       
+        <script>
+
+            const data = [
+                {
+                    name: 'Daniel',
+                    age: 26,
+                    city: 'Belem'
+
+                },
+
+                {
+                    name: 'July',
+                    age: 22,
+                    city: 'Sao Paulo'
+                },
+
+                {
+                    name: 'Gabriel',
+                    age: 31,
+                    city: 'Rio de Janeiro'
+                }
+            ]
+
+            const num = [ 2, 5,  -6, 0, -1, -4, 7, 3];
+
+            const numFind = num.find( x => x < 0);
+            console.log(numFind);
+            const numFindIdex = num.findIndex( x => x < -4);
+            console.log(numFindIdex);
+            
+
+            //trabalhando com objetos json
+            const personFind = data.find ( person => person.name ==='Gabriel' );
+            console.log(personFind); //return object 'Gabriel'
+
+            const personFindIndex = data.findIndex(person => person.name ==='July' );
+            console.log(personFindIndex); //return 1
+
+
+            const cityFind = data.find( data => data.city === 'Sao Paulo');
+            console.log(cityFind); //return Object July
+            const cityFindIndex = data.findIndex( data => data.city === 'Belem');
+            console.log(cityFindIndex); //return object 0
+            
+            
+            
+            
+
+            
+               
+        </script>
+    </body>
+</html>

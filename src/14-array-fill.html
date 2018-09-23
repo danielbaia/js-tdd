@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+       
+        <script>
+
+            var data = [
+                {
+                    name: 'Daniel',
+                    age: 26,
+                    city: 'Cameta'
+
+                },
+
+                {
+                    name: 'July',
+                    age: 22,
+                    city: 'Belem'
+                },
+
+                {
+                    name: 'Gabriel',
+                    age: 31,
+                    city: 'Santarem'
+                },
+
+                {
+                    name: 'Ana',
+                    age: 31,
+                    city: 'Maraba'
+                }
+            ];
+
+
+            const arr = new Array(50);
+
+            arr.fill("lol");
+            console.log(arr);
+            
+
+            arr.fill ("teste", 5 , 10);
+            console.log(arr);
+
+            const newData = data.map( (obj) => {
+                obj.estado = "Para";
+                return obj;
+            });
+
+            console.log(newData);
+
+            const dataFill = newData.find( (newData => newData.estado === "Para" ? newData.temperature = 40 : newData.temperature = 22));
+            console.log(dataFill);
+            
+ 
+                        
+               
+        </script>
+    </body>
+</html>
