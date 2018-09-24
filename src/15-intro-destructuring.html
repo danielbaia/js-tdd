@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+       
+        <script>
+
+            var data = {
+                    name: 'Daniel',
+                    surname: 'Amaral',
+                    age: 26,
+                    city: 'Cameta',
+                    blog: 'http://www.danielbaia.com.br',
+                    social :{
+                        facebook: '/danielbaia',
+                        twitter: '@danielbaia'
+                    }
+            }
+
+            //metodo antigo
+            /* const name = data.name;
+            const surname = data.surname;
+            console.log(name);
+            console.log(surname); */
+
+            // Com destructuring
+            const {name, surname, age} = data;
+            console.log(name);
+            console.log(surname);
+            console.log(age);
+
+            //pegando de dentro do objeto
+            //exemplo antigo
+            //const facebook = data.social.facebook;
+            //console.log(facebook);
+            
+            //novo metodo
+            const {facebook , twitter} = data.social;
+            console.log(facebook);
+            console.log(twitter);
+
+            //renomeando a variavel para fb
+            const {facebook : fb} = data.social;
+            console.log(fb);
+
+            //definindo valor default caso a variavel nao existe
+            //JS verifica se a variavel existe e o valor existe e seta como default
+            //Caso a variavel ja exista ele exibe undefined
+            const {state = 'Pará', city = 'Belem'} = data;
+            console.log(state);
+            console.log(city);
+            
+                          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <script>
+            
+            var front = ['angular', 'react', 'vue', 'aurelia'];
+            var back = ['node', 'python', 'ruby', 'php'];
+
+            //realizando o spread no elementos iterator
+            //transforma a string em um array
+            console.log([...'Daniel']);
+            //imprime os elementos desmembrados
+            console.log(...'Daniel');
+
+            //antigamente como contatenar array's
+            var fullstack = front.concat(back);
+            console.log(fullstack);
+            
+
+            // E se o usuáro quisesse adicionar um 'RX-JS' no front como fazer?
+            //antigamente
+
+            var fs = [];
+            fs = fs.concat(front);
+            fs.push('RX-JS');
+            fs = fs.concat(back);
+            console.log(fs);
+
+            //Como fazer usando o Spread
+            var fsSpread = [...front, 'Rx-JS', ...back, 'cake', 'zend' ];
+            console.log(fsSpread);
+
+
+        </script>
+    </body>
+</html>
