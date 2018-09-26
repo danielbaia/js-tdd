@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <script>
+            
+            var posts = fetch('https://willianjusten.com.br/search.json');
+            console.log(posts);
+
+            //possui 3 status
+            //pending - aguardando respota
+            //resolved - concluido
+            //rejected - ocorreu um erro
+
+           /*  setTimeout(() =>{
+                console.log(posts);
+                
+            }, 3000); */
+
+
+           /*  posts.then( data => data.json())
+                    .then( data => console.log(data)); */
+
+            /* posts.then(data => data.json())
+                 .then( data => data.map( post => 
+                     console.log(`${post.title} - ${post.date}`)
+                    )); */
+            
+            
+            posts.then(data => data.json())
+                 .then( data => {throw new Error('Ixi deu erro!') })
+                 .catch(data => console.log(data));
+            
+
+
+            
+
+        </script>
+    </body>
+</html>
