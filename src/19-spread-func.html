@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <script>
+            
+            function makeSandwich(bread, cheese, sauce){
+                console.log(`Your sandwich with ${bread} bread, ${cheese} cheese and ${sauce}`);
+            }
+
+            //como ocorre a chamada de funcao
+            //makesandwich('white', 'cheddar', 'barbecue');
+
+            //utilizando spread para a chamada de funcao
+            const ingredientes = ['white', 'cheddar', 'barbecue'];
+            makeSandwich(...ingredientes);
+
+        </script>
+    </body>
+</html>

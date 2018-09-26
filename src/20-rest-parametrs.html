@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <script>
+            
+           //como era feita antigamente
+
+           function multiply(mult, arg1, arg2, arg3){
+               var args = [];
+               args.push(mult * arg1);
+               args.push(mult * arg2);
+               args.push(mult * arg3);
+
+               return args;
+           }
+
+           console.log(multiply(2, 1, 2, 3));
+
+           //como fazer no ES6
+
+           function multiplyNew(mult, ...args){
+               return args.map( (arg) =>  arg * mult);
+           }
+
+           console.log(multiplyNew(5, 1, 5, 10));
+           
+           
+
+        </script>
+    </body>
+</html>
