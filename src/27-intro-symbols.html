@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <script>
+            
+        var person = {
+            [Symbol('name')] :"Daniel",
+            [Symbol('age')]: 26,
+            city: "Dublin"
+        };
+
+        console.log(Object.keys(person));
+
+        console.log(Object.getOwnPropertySymbols(person));
+
+        const symbols = Object.getOwnPropertySymbols(person);
+        let data = symbols.map( sym => person[sym]);
+        console.log(data);
+        
+        
+        
+
+
+
+
+           
+
+        </script>
+    </body>
+</html>
